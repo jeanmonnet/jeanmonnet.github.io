@@ -1,0 +1,60 @@
+.title
+{
+	font-family: Papyrus;
+	font-size:60px;
+	color: #6495ed ;
+}
+
+p
+{
+	font-family: Arial;
+	font-size:18px;
+	color: black;
+	margin: 25px 200px 25px 200px;
+}
+
+
+.list
+{
+	margin: 90px 200px;
+}
+
+
+.pid{margin-bottom:20px}
+
+.article_content>ul li,.article_content blockquote>ul li,.article_content .auto li,.article_content .aereo li,.article_content .accordion-toggle li,.article_content .pid li{padding:4px 0px;display:table;width:100%;line-height:1.6em}
+
+.p2 {
+	margin: 0px 200px 0px 200px;
+	text-align: justify;
+}
+
+.pid {
+	margin-top: 50px;
+	text-align:center;
+}
+
+.p3
+{
+		margin: 0px 400px 0px 400px;
+}
+
+.list2 {
+	margin: 0px 200px 0px 200px;
+}
+.img{
+	width:30%;
+	
+}
+
+.font{
+	height:420px;
+}
+.imp{
+	width:50%;
+}
+
+.pin {
+
+	text-align:center;
+}

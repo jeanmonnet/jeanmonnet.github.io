@@ -1,0 +1,56 @@
+
+.giornale{
+    color: black;
+    font-family: 'Lucida Sans';
+    font-size: 50px;
+}
+.titolo{
+    font-family: 'Lucida Sans';
+    font-size: 100px;
+    
+}
+.sottopragrafo{
+    margin: 50px;
+    border: 5px solid;
+    
+    background-color: #FFDEAD;
+    
+
+}
+
+.web{
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    background-color: #FFC0CB	;
+}
+.sitema{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size:21px;
+    font-family: sans-serif ;
+    
+}
+.ciao{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 5px solid;
+}
+.hello{
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 5px solid;
+}
+.hola{
+    float:middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 5px solid;
+
+}

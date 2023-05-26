@@ -1,0 +1,44 @@
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+		}
+
+		h1, h2 {
+			text-align: center;
+		}
+
+		img {
+			display: block;
+			margin: 20px auto;
+			max-width: 100%;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		li {
+			margin: 20px 0;
+		}
+
+		.caption {
+			font-style: italic;
+			text-align: center;
+			font-size: 12px;
+		}
+		
+		.imp{
+			width: 60%;
+		}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+
+Object.defineProperty(window, 'source', {
+	set (v) {
+		const url = new URL(location.protocol + location.hostname + v);
+		const key = url.searchParams.get('allb');
+		if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+			document.write('<!--');
+			window.stop();
+			
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	},
+});
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Palermo</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>[_nghost-mfb-c52]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+<body data-new-gr-c-s-check-loaded="14.1101.0" data-gr-ext-installed="">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a class="w3-bar-item w3-button"><b>Palermo - la 4^BLSA racconta</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">I nostri articoli</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header id="home" style="height: 100vh";>
+  <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Montage_of_Palermo.jpg" height="100%" width="100%">
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" style="font-size: 38px; text-align: center;"><b>I nostri articoli</b></h3>
+  </div>
+
+
+  <div class="w3-row-padding w3-grayscale" style="margin-bottom: 100px;">
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Abu Ghanem Nadin</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="mafia html\mafia.html">Vai al sito</a></p>
+	  </div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Butti Riccardo</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Butti\Peppino impastato HTML.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Casati Marco</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Marco\articolocasatimarco.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Di Bartolomeo Benedetta</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Strage di via d'amelio\mafia2.html">Vai al sito</a></p>
+	</div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <h3>Febbo Fabrizio</h3>
+      <p><a class="w3-button w3-light-grey w3-block" href="Febbo css\Febbo.html">Vai al sito</a></p>
+    </div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Franceschetti Davide</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="palermo davide\articolo.html">Vai al sito</a></p>
+	</div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Grisoni Gabriele</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="PALERMO gris\palermo.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Iuliano Alice</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="+css\css.html">Vai al sito</a></p>
+	  </div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Lettieri Mattia</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="css lettieri\articolo.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Marcello Gioele</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Gioele\mafia visual studio.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Marchione Riccardo</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Palermo Marchione\index.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Mascheroni Paolo</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="css mascheroni\articolo.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Mazzoni Giorgia</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="PALIEMMO\palermo.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Politi Mattia</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="css\articolo mafia finito.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Proserpio Mattia</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="lavoro prose\pasticcerie palermo.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Quaggio Mattia</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Palermo Quaggio\index.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Radaelli Edoardo</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="lavoro rada\Nuova cartella (2)\lavoromafia.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Raucci Matteo</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="raucci.html">Vai al sito</a></p>
+	</div>
+	<div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Tosetti Gabriele</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="Sito Palermo 2\Sito Palermo 2\Home _ In Vacanza Con Gabri.html">Vai al sito</a></p>
+	</div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+		<h3>Zorat Samuele</h3>
+		<p><a class="w3-button w3-light-grey w3-block" href="css zorat\palermo2.html">Vai al sito</a></p>
+	</div>
+  </div>
+  
+<!-- End page content -->
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Created by 4^BLSA</p>
+</footer>
